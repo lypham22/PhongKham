@@ -22,8 +22,12 @@ namespace PhongKhamSan.DTO
 
         public DateTime NgayDuSanh { get; set; }
 
+        public string TuoiThai { get; set; }
+
         public string GhiChu { get; set; }
         public DateTime NgayTao { get; set; }
+
+        public int GioiTinh { get; set; }
 
     }
 
@@ -39,12 +43,4 @@ namespace PhongKhamSan.DTO
 
         public DateTime NgayTao { get; set; }
     }
-
-    public class RefData
-    {
-        public string DataKey { get; set; }
-
-        public string DataText { get; set; }
-    }
-
 }

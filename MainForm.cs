@@ -35,5 +35,11 @@ namespace PhongKhamSan
             themBenhNhan.Show();
 
         }
+
+        private void menuNhapThuoc_Click(object sender, EventArgs e)
+        {
+            NhapThuoc nhapThuoc = new NhapThuoc();
+            nhapThuoc.Show();
+        }
     }
 }

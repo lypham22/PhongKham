@@ -71,22 +71,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\BaseDAL.cs" />
     <Compile Include="DAL\BenhNhanDAL.cs" />
     <Compile Include="DAL\ConnectDB.cs" />
     <Compile Include="DAL\ThongTinKhamDAL.cs" />
+    <Compile Include="DAL\ThuocDAL.cs" />
     <Compile Include="DanhSachBN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhSachBN.Designer.cs">
       <DependentUpon>DanhSachBN.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhSachThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachThuoc.Designer.cs">
+      <DependentUpon>DanhSachThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\BenhNhan.cs" />
+    <Compile Include="DTO\RefData.cs" />
     <Compile Include="DTO\ThongTinKham.cs" />
+    <Compile Include="DTO\Thuoc.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapThuoc.Designer.cs">
+      <DependentUpon>NhapThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanQuyen.Designer.cs">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="PhieuKham.cs">
       <SubType>Form</SubType>
@@ -100,12 +122,6 @@
     <Compile Include="PrintPhieuKham.Designer.cs">
       <DependentUpon>PrintPhieuKham.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrintReview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrintReview.Designer.cs">
-      <DependentUpon>PrintReview.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -118,17 +134,23 @@
     <EmbeddedResource Include="DanhSachBN.resx">
       <DependentUpon>DanhSachBN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachThuoc.resx">
+      <DependentUpon>DanhSachThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapThuoc.resx">
+      <DependentUpon>NhapThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhanQuyen.resx">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuKham.resx">
       <DependentUpon>PhieuKham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrintPhieuKham.resx">
       <DependentUpon>PrintPhieuKham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrintReview.resx">
-      <DependentUpon>PrintReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

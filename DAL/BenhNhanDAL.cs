@@ -28,6 +28,7 @@ namespace PhongKhamSan.DAL
             paras.Add(new SqlParameter("@DienThoai", bn.DienThoai));
             paras.Add(new SqlParameter("@NgayDuSanh", bn.NgayDuSanh));
             paras.Add(new SqlParameter("@GhiChu", bn.GhiChu));
+            paras.Add(new SqlParameter("@GioiTinh", bn.GioiTinh));
             try
             {
                 cnDB.ExecNonQuery("spa_ThemBenhNhan", CommandType.StoredProcedure, paras, out paras);
@@ -93,7 +94,8 @@ namespace PhongKhamSan.DAL
                         Para = data["Para"].ToString(),
                         GhiChu = data["GhiChu"].ToString(),
                         DiaChi = data["DiaChi"].ToString(),
-                        NgayTao = DateTime.Parse(data["NgayTao"].ToString())
+                        NgayTao = DateTime.Parse(data["NgayTao"].ToString()),
+                        GioiTinh = int.Parse(data["GioiTinh"].ToString())
                     };
                 }
                 return bn;

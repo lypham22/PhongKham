@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PhongKhamSan
 {
-    public partial class PrintReview : Form
+    public partial class PhanQuyen : Form
     {
-        public PrintReview()
+        public PhanQuyen()
         {
             InitializeComponent();
         }
